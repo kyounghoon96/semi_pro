@@ -8,6 +8,7 @@
 <title>main</title>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <link href="<%=request.getContextPath()%>/resources/css/index.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="main-div">
@@ -44,7 +45,7 @@
 	}
 	function BtnBoard(){
 		alert("게시판으로 이동");
-		location.href="<%=request.getContextPath()%>/board";
+		location.href="<%=request.getContextPath()%>/boardlist";
 	}
 	</script>
 	</div>
