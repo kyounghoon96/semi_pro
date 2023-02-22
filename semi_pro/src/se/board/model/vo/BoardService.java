@@ -38,5 +38,15 @@ public class BoardService {
 		JDBCTemplate.close(conn);			
 		return result;
 	}
+	
+	public int getRemoveList(BoardVo vo) {
+		int result = 0;
+		Connection conn = JDBCTemplate.getConnection();
+		result = new BoardDao().getUpdateList(conn, vo);		
+		JDBCTemplate.close(conn);			
+		return result;
+	}
+	
+	
 
 }

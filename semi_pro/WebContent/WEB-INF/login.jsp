@@ -5,12 +5,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>kh 로그인</title>
+<title>login</title>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="row text-center text-bg-light g-0 border border-primary" style="width: 100%; height:500px;">
+		<div class="row align-items-center justify-content-between">
+			<a class="navbar-brand h1 text-center">
+				<span class="text-dark h1">로그인</span>
+			</a>
+		</div>
 		<div class="align-self-center" style="width:500px; float:none; margin:0 auto">
 			<form action="<%=request.getContextPath() %>/login" method="post">
 			<div class="form-floating mb-3">
@@ -28,12 +33,8 @@
 			</form>
 		</div>
 	</div>
-
-	
-	
 	<script>
-		$(".btn.enroll").on("click", handlerClickBtnEnroll);
-		
+		$(".btn.enroll").on("click", handlerClickBtnEnroll);		
 		function handlerClickBtnEnroll(){			
 			console.log("btnEnroll 눌림");
 			location.href="<%=request.getContextPath()%>/enroll";

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>내정보</title>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 <link href="<%=request.getContextPath()%>/resources/css/myinfo.css" rel="stylesheet">

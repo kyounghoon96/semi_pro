@@ -11,8 +11,10 @@
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 <body>
-	
-	<h1>게시판</h1>
+	<form style="white-space:nowrap;">
+	<div class="d-flex justify-content-center text-bg-light p-3 border border-primary">
+		<h1>게시판</h1>
+	</div>
 	<table class="table table-hover">
 		<tr>
 			<td>글번호</td>
@@ -29,9 +31,14 @@
 			</tr>
 		</c:forEach>	
 	</table>
+	<div class="d-flex justify-content-end">
 	<div>
-		<button type="button" onclick="location.href='<%=request.getContextPath()%>/boardadd'" class="btn btn-light">작성</button>
-		<button type="button" onclick="location.href='<%=request.getContextPath()%>/boardupdate'" class="btn btn-light">수정</button>
-	</div>	
+		<button type="button" onclick="location.href='<%=request.getContextPath()%>/boardadd'" class="btn btn-success" >작성</button>
+	</div>
+	<div style="margin-left:10px;">
+		<button type="button" onclick="location.href='<%=request.getContextPath()%>/boardupdate'" class="btn btn-success">수정</button>
+	</div>
+	</div>
+	</form>	
 </body>
 </html>

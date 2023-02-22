@@ -102,6 +102,26 @@ public class BoardDao {
 		
 	}
 	
+	public int getRemoveList(Connection conn, BoardVo vo) {
+		int result = 0;
+		
+		String query = "delete from board where id = ?";
+		
+		PreparedStatement pstmt = null;
+		
+		try {
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, vo.getBoardNum());
+			result = pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			JDBCTemplate.close(pstmt);
+		}	
+		return result;
+		
+	}
+	
 	
 	
 	
