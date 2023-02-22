@@ -63,7 +63,7 @@ public class BoardDao {
 		int result = 0;
 		
 		String query="insert into board values((select nvl(max(board_num),0) +1 from board),"
-					+ "? ,?, ?, default)";
+					+ "? ,?, ?, sysdate)";
 		PreparedStatement pstmt = null;
 		
 		try {
