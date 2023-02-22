@@ -22,5 +22,21 @@ public class BoardService {
 		return result;	
 		
 	}
+	
+	public int getAddList(BoardVo vo) {
+		int result = 0;
+		Connection conn = JDBCTemplate.getConnection();
+		result = new BoardDao().getAddList(conn, vo);		
+		JDBCTemplate.close(conn);		
+		return result;	
+	}
+	
+	public int getUpdateList(BoardVo vo) {
+		int result = 0;
+		Connection conn = JDBCTemplate.getConnection();
+		result = new BoardDao().getUpdateList(conn, vo);		
+		JDBCTemplate.close(conn);			
+		return result;
+	}
 
 }
