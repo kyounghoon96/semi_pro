@@ -45,7 +45,7 @@ public class EnrollController extends HttpServlet {
 		vo.setUser_name(request.getParameter("user_name"));
 		vo.setPhone(request.getParameter("phone"));
 		vo.setGender(request.getParameter("gender"));
-		vo.setBirth(request.getParameter("birth"));
+		vo.setBirth(request.getParameterValues("birth")[0] + request.getParameterValues("birth")[1]+ request.getParameterValues("birth")[2]);
 		vo.setAddress(request.getParameter("address"));
 		
 		int result = new MemberService().enroll(vo);
