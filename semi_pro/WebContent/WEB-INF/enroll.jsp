@@ -64,12 +64,12 @@
 						<div class="form-group">
 						<label for="addressboot" class="form-label mt-4">주소</label>
 						<input type="text" class="form-control" id="addressboot" name="address">
-					</div>							
+					</div>
+					<div class="text-end p-3" style="white-space:nowrap;">
+						<button type="submit" class="btn btn-success">회원가입</button>
+					</div>
 			</form>
-			</div>
-			<div class="text-end p-3" style="white-space:nowrap;">
-				<button type="submit" class="btn btn-success">회원가입</button>
-			</div>			
+		</div>						
 	</section>
 </body>
 </html>
