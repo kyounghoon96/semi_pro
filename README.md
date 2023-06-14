@@ -23,6 +23,9 @@
 |------|---|---|
 |![게시판](https://github.com/kyounghoon96/symmetrical-spoon/assets/113161447/dacade7f-4051-4f63-bc36-38e6fee9331c)|![수정페이지](https://github.com/kyounghoon96/symmetrical-spoon/assets/113161447/04f3efa6-0af3-4d38-810a-856496d7a133)|![작성페이지](https://github.com/kyounghoon96/symmetrical-spoon/assets/113161447/7f29f1e6-4aba-43cd-81ab-d61c33bd3d86)|
 
+### ERD
+<img src="https://github.com/kyounghoon96/symmetrical-spoon/assets/113161447/483328a1-7d7b-46de-9940-09aab75eb52b" width=50% height=70%/>
+
 ### 주요기능
 메인페이지
 로그인
